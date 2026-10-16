@@ -20,9 +20,9 @@
     body {
       min-height: 100vh;
       margin: 0;
-      padding: 40px 20px;
-      background: linear-gradient(
-        180deg,
+      padding-top: 40px;
+      padding-bottom: 40px;
+      background: conic-gradient(from 220deg at 50% 50%,
         #D7D2CA,
         #DDD1BF,
         #C9AEA3,
@@ -38,12 +38,12 @@
     }
 
     .main-container {
-      max-width: 600px;
-      margin: 0 auto;
+      max-width: 640px;
+      margin: auto;
       text-align: center;
     }
 
-    .image-row img {
+    .avatar-image {
       width: 266px;
       height: 266px;
       border-radius: 50%;
@@ -87,15 +87,15 @@
       gap: 20px;
       padding: 15px;
       background: rgba(255, 255, 255, 0.2);
-      border-radius: 12px;
+      border-radius: 51px;
       text-align: left;
     }
 
     .item img {
-      width: 70px;
-      height: 70px;
+      width: 51px;
+      height: 51px;
       object-fit: cover;
-      border-radius: 8px;
+      border-radius: 51px;
     }
 
     .item a {
@@ -112,7 +112,7 @@
 
     <!-- 1. Avatar -->
     <div class="image-row">
-      <img src="/thumbnails/headshot.jpeg"
+      <img class="avatar-image" src="/thumbnails/headshot.jpeg"
            alt="Jyun Zhou headshot">
     </div>
 

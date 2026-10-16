@@ -7,6 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Link in Bio</title>
 
+<!-- Load Font Awesome icons -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"></script>
+
+<style>
+
   <style>
     * {
       box-sizing: border-box;
@@ -27,7 +32,8 @@
         #91AAA8,
         #A7B5A1
       );
-      color: white;
+      color: white
+      ;
       font-family: "Raleway", Arial, sans-serif;
     }
 
@@ -59,9 +65,15 @@
     }
 
     .social-icons-row a {
-      color: white;
-      text-decoration: none;
-    }
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+  transition: transform 0.2s;
+}
+
+.social-icons-row a:hover {
+  transform: scale(1.15);
+}
 
     .links-row {
       display: flex;
@@ -91,12 +103,6 @@
       text-decoration: none;
       font-weight: bold;
     }
-
-    /* 调试布局时，可以打开这条规则：
-    * {
-      border: 1px red dashed;
-    }
-    */
   </style>
 </head>
 
@@ -116,48 +122,61 @@
     </div>
 
     <!-- 3. Social media links -->
-    <div class="social-icons-row">
+<div class="social-icons-row">
 
-      <a href="https://github.com/heyjyun"
-         target="_blank" rel="noopener noreferrer">
-        GitHub
-      </a>
+  <a href="https://github.com/heyjyun"
+     target="_blank" rel="noopener noreferrer"
+     aria-label="GitHub">
+    <i class="fa-brands fa-github"></i>
+  </a>
 
-      <a href="https://www.linkedin.com/in/jyunzhou"
-         target="_blank" rel="noopener noreferrer">
-        LinkedIn
-      </a>
+  <a href="https://www.linkedin.com/in/jyunzhou"
+     target="_blank" rel="noopener noreferrer"
+     aria-label="LinkedIn">
+    <i class="fa-brands fa-linkedin"></i>
+  </a>
 
-      <a href="https://www.instagram.com/jyunkojika/"
-         target="_blank" rel="noopener noreferrer">
-        Instagram
-      </a>
+  <a href="https://www.instagram.com/jyunkojika/"
+     target="_blank" rel="noopener noreferrer"
+     aria-label="Instagram">
+    <i class="fa-brands fa-instagram"></i>
+  </a>
 
-      <a href="https://x.com/jyun_zhou37286"
-         target="_blank" rel="noopener noreferrer">
-        X
-      </a>
+  <a href="https://x.com/jyun_zhou37286"
+     target="_blank" rel="noopener noreferrer"
+     aria-label="X">
+    <i class="fa-brands fa-x-twitter"></i>
+  </a>
 
-    </div>
+</div>
 
     <!-- 4. Featured links -->
     <div class="links-row">
+
+       <div class="item">
+        <img src="/thumbnails/bamboo.jpeg" alt="Tech / AI / Entrepreneur">
+
+        <a href="https://paulgraham.com/startupideas.html"
+           target="_blank" rel="noopener noreferrer">
+          Tech / AI / Entrepreneur
+        </a>
+      </div>
 
       <div class="item">
         <img src="/thumbnails/deer.jpeg" alt="Kojika Jyun Ko - Deer">
 
         <a href="https://paulgraham.com/startupideas.html"
            target="_blank" rel="noopener noreferrer">
-          How to Get Startup Ideas
+          Kojika Jyun Ko - Deer
         </a>
       </div>
 
       <div class="item">
-        <img src="/thumbnails/typography.jpg" alt="Typography">
+        <img src="/thumbnails/yellow.jpeg" alt="dreaming about becoming a scientist">
 
         <a href="https://practicaltypography.com/typography-in-ten-minutes.html"
            target="_blank" rel="noopener noreferrer">
-          Typography in ten minutes
+          Still Dreaming about becoming a scientist
         </a>
       </div>
 

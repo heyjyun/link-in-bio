@@ -1,3 +1,238 @@
-<h1>My Homepage</h1>
 
-<h2>My link in Bio</h2>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Link in Bio</title>
+ 
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"></script>
+
+
+<style>
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      margin: 0;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      background: conic-gradient(from 220deg at 50% 50%,
+        #D7D2CA,
+        #DDD1BF,
+        #C9AEA3,
+        #C5A5A1,
+        #B5A7BA,
+        #91A6B2,
+        #91AAA8,
+        #A7B5A1
+      );
+      color: white
+      ;
+      font-family: "Raleway", Arial, sans-serif;
+    }
+
+    .main-container {
+      max-width: 500px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .avatar-image {
+      width: 266px;
+      height: 266px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 0px;
+    }
+
+    .name-row {
+      font-family: "Cormorant Garamond", sans-serif;
+      font-size: 36px;
+      font-weight: 700;
+      margin-top: 20px;
+      margin-right: 0;
+      margin-bottom: 30px;
+      margin-left: 0;
+      text-align: center;
+    }
+
+    .social-icons-row {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 1px;
+      margin-bottom: 30px;
+    }
+
+    .social-icons-row a {
+      color: white;
+      text-decoration: none;
+      font-size: 30px;
+      transition: transform 0.2s;
+    }
+
+   .social-icons-row a:hover {
+      transform: scale(1.15);
+    }
+
+    .links-row {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 3px;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 51px;
+      text-align: center;
+      box-shadow: 5px 5px 8px 0px rgba(223, 220, 205, 0.5);
+      
+    }
+
+    .item img {
+      width: 39px;
+      height: 39px;
+      object-fit: cover;
+      border-radius: 51px;
+    }
+
+    .item a {
+      font-family: "Jost", sans-serif;
+      font-size: 16px;
+      font-weight: 411;
+      color: white;
+      text-decoration: none;
+      flex: 1;
+      text-align: center;
+      transform: translateX(-17px);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="main-container">
+
+    <!-- 1. Avatar -->
+    <div class="image-row">
+      <img class="avatar-image" src="/thumbnails/headshot.jpeg"
+           alt="Jyun Zhou headshot">
+    </div>
+
+    <!-- 2. Name -->
+    <div class="name-row">
+      Jyun Zhou
+    </div>
+
+    <!-- 3. Social media links -->
+    <div class="social-icons-row">
+
+  <a href="https://github.com/heyjyun"
+     target="_blank" rel="noopener noreferrer"
+     aria-label="GitHub">
+    <i class="fa-brands fa-github"></i>
+  </a>
+
+  <a href="https://www.linkedin.com/in/jyunzhou"
+     target="_blank" rel="noopener noreferrer"
+     aria-label="LinkedIn">
+    <i class="fa-brands fa-linkedin"></i>
+  </a>
+
+  <a href="https://www.instagram.com/jyunkojika/"
+     target="_blank" rel="noopener noreferrer"
+     aria-label="Instagram">
+    <i class="fa-brands fa-instagram"></i>
+  </a>
+
+  <a href="https://x.com/jyun_zhou37286"
+     target="_blank" rel="noopener noreferrer"
+     aria-label="X">
+    <i class="fa-brands fa-x-twitter"></i>
+  </a>
+
+    </div>
+
+    <!-- 4. Featured links -->
+    <div class="links-row">
+
+       <div class="item">
+        <img src="/thumbnails/bamboo.jpeg" alt="Tech / AI / Entrepreneur">
+
+        <a href="https://www.wired.com/story/ai-startup-interview-founders/"
+           target="_blank" rel="noopener noreferrer">
+          Tech / AI / Entrepreneur
+        </a>
+       </div>
+
+       <div class="item">
+        <img src="/thumbnails/yellow.jpeg" alt="Mentally Living in the 22nd Century">
+
+        <a href="https://www.wired.com/story/sci-fi-writers-prepare-us-for-an-uncertain-future"
+           target="_blank" rel="noopener noreferrer">
+          Mentally Living in the 22nd Century
+        </a>
+       </div>
+
+       <div class="item">
+        <img src="/thumbnails/wine4.jpeg" alt="Collecting Flavors Around the World ">
+
+        <a href="https://www.nationalgeographic.com/travel/best-of-the-world-2026/article/best-food-destinations"
+           target="_blank" rel="noopener noreferrer">
+          Collecting Flavors Around the World 
+        </a>
+      </div>
+
+      <div class="item">
+        <img src="/thumbnails/yoga.jpeg" alt="Finding My Balance, On and Off the Mat">
+
+        <a href="https://aeon.co/essays/we-live-inside-minds-always-planning-scanning-and-narrating"
+           target="_blank" rel="noopener noreferrer">
+          Finding My Balance, On and Off the Mat
+        </a>
+      </div>
+
+      <div class="item">
+        <img src="/thumbnails/deer.jpeg" alt="Kojika Jyun Ko - Deer">
+
+        <a href="https://www.atlasobscura.com/articles/on-the-scene-the-japanese-city-where-the-deer-roam-free"
+           target="_blank" rel="noopener noreferrer">
+          Kojika Jyun Ko - Deer
+        </a>
+      </div>
+
+      <div class="item">
+        <img src="/thumbnails/garden.jpeg" alt="Part-Time Dreamer, Full-Time Explorer">
+
+        <a href="https://aeon.co/essays/what-drives-the-urge-to-explore-the-farthest-human-reaches"
+           target="_blank" rel="noopener noreferrer">
+          Part-Time Dreamer, Full-Time Explorer
+        </a>
+      </div>
+
+      <div class="item">
+        <img src="/thumbnails/tech.jpeg" alt="Somewhere Between Logic and Poetry">
+
+        <a href="https://mathmap.quantamagazine.org/"
+           target="_blank" rel="noopener noreferrer">
+          Somewhere Between Logic and Poetry
+        </a>
+      </div>
+
+    </div> <!-- links-row -->
+
+  </div> <!-- main-container -->
+
+</body>
+</html>

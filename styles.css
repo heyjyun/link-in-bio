@@ -102,3 +102,7 @@
       transform: translateX(-17px);
     }
 
+    .footer-row {
+      margin-top: 30px;
+      text-align: center;
+    }
